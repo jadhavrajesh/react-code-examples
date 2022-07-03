@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+/** SearchDropdown */
+.search-module-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;  
+}
+
+.search-module-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;  
+}
+
+.search-module-container label {
+  font-size: 20px;
+  text-align: left;  
+}
+
+.search-module-container .input-search {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.search-module-container ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.search-module-container li {
+  font-size: 20px;
+  text-align: left;
+  list-style: none;
+  padding: 5px 10px;
+}
