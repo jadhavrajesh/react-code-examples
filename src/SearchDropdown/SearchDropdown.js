@@ -9,11 +9,16 @@ class SearchDropdown extends React.Component {
       isHidden: true,
     };
     this.onChangeHandler = this.onChangeHandler.bind(this);
+    this.onClickHandler = this.onClickHandler.bind(this);       
   }
 
   onChangeHandler(e) {
     const searchText = e.target.value;
     this.setState({ value: searchText, isHidden: false });
+  }
+
+  onClickHandler(){
+    this.setState({ isHidden: false });
   }
 
   getSearchResults() {
@@ -36,6 +41,7 @@ class SearchDropdown extends React.Component {
               value={this.state.value}
               placeholder="Search..."
               onChange={this.onChangeHandler}
+              onClick={this.onClickHandler}              
               className="input-search"
             ></input>
             {!this.state.isHidden && (
