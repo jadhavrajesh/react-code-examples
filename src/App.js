@@ -4,6 +4,9 @@ import DependentDropdown from "./DependentDropdown";
 import Checkbox from "./Checkbox";
 import EditableTable from "./EditableTable";
 import HackerDormitory from "./HackerDormitory";
+import ToDoList from "./ToDoList";
+import Table from "./Table";
+import EmptyTable from "./EmptyTable";
 
 function App() {
   return (
@@ -12,7 +15,10 @@ function App() {
       {/* <DependentDropdown/> */}
       {/* <Checkbox /> */}
       {/* <EditableTable /> */}
-      <HackerDormitory />
+      {/* <HackerDormitory /> */}
+      {/* <ToDoList /> */}
+      {/* <Table /> */}
+      <EmptyTable />
     </div>
   );
 }
